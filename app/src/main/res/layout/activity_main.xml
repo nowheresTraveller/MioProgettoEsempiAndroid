@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/otherFunctionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="Funzioni"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/firstButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="To GridView"
+                android:textSize="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/otherFunctionTitle" />
+
+            <Button
+                android:id="@+id/secondButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="To RecyclerView"
+                android:textSize="10dp"
+                app:layout_constraintLeft_toRightOf="@+id/firstButton"
+                app:layout_constraintTop_toBottomOf="@+id/otherFunctionTitle" />
+
+
+            <Button
+                android:id="@+id/thirdButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:onClick="printALog"
+                android:text="but. with 'onClick'"
+                android:textSize="10dp"
+                app:layout_constraintLeft_toRightOf="@+id/secondButton"
+                app:layout_constraintTop_toBottomOf="@+id/otherFunctionTitle" />
+
+            <Button
+                android:id="@+id/fourthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="to a ListView"
+                android:textSize="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstButton" />
+
+            <Button
+                android:id="@+id/fifthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="manage diff. events"
+                android:textSize="10dp"
+                app:layout_constraintLeft_toRightOf="@id/fourthButton"
+                app:layout_constraintTop_toBottomOf="@+id/secondButton" />
+            <Button
+                android:id="@+id/sixthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="other_funct"
+                app:layout_constraintTop_toBottomOf="@id/thirdButton"
+                app:layout_constraintLeft_toRightOf="@id/fifthButton"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"/>
+
+            <EditText
+                android:id="@+id/firstEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="do differents events"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fourthButton" />
+
+
+            <TextView
+                android:id="@+id/forCheckBoxTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="CheckBox"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstEditText" />
+
+            <CheckBox
+                android:id="@+id/firstCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="checkOnCheckBox"
+                android:text="macchina"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/forCheckBoxTitle" />
+
+            <CheckBox
+                android:id="@+id/secondCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:onClick="checkOnCheckBox"
+                android:text="moto"
+                app:layout_constraintLeft_toRightOf="@+id/firstCheckBox"
+                app:layout_constraintTop_toBottomOf="@id/forCheckBoxTitle" />
+
+
+            <TextView
+                android:id="@+id/forRadioButtonTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="Radio Button"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/secondCheckBox" />
+
+            <RadioGroup
+                android:id="@+id/myRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/forRadioButtonTitle">
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonSelected"
+                    android:text="maschio" />
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="radioButtonSelected"
+                    android:text="femmina" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/forSwitchAndToogleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="Switch e Toogle"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myRadioGroup" />
+
+            <LinearLayout
+                android:id="@+id/switchAndToogleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forSwitchAndToogleTitle">
+
+                <Switch
+                    android:id="@+id/mySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="il contatto vuole ricevere e-mail" />
+
+                <ToggleButton
+                    android:id="@+id/myToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forSpinnerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="Spinner"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switchAndToogleContainer" />
+
+            <Spinner
+                android:id="@+id/mySpinner"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/forSpinnerTitle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProgettoEsercizi</string>
+
+
+    <string-array name="citta">
+        <item>seleziona città</item>
+        <item>Milano</item>
+        <item>Roma</item>
+        <item>Napoli</item>
+        <item>Bari</item>
+    </string-array>
+</resources>
