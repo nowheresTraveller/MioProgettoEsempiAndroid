@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProgettoEsercizi"
         tools:targetApi="31">
+        <service
+            android:name=".classes.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".NavDrawerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/Theme.ProgettoEsercizi.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SeventhExamplesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".FifthExamplesActivity"
             android:exported="false">

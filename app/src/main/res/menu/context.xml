@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/callElement" android:title="chiama"></item>
+    <item android:id="@+id/sendMailElement" android:title="invia e-mail"></item>
+    <item android:id="@+id/sendSmsElement" android:title="invia sms"></item>
+    <item android:title="altre opzioni">
+        <menu>
+            <item android:title="invia whatsapp" android:id="@+id/sendWhatsappElement"></item>
+            <item android:title="vai su instagramm" android:id="@+id/goToInstagramElement"></item>
+        </menu>
+    </item>
+</menu>
